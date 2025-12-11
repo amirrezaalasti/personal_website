@@ -1,0 +1,120 @@
+[
+    {
+        "title": "EmpiRE Compass",
+        "description": "Open Source Research Impact Dashboard. Technical Team Lead.",
+        "tags": [
+            "Data Science",
+            "Dashboard",
+            "Open Source"
+        ],
+        "links": [
+            {
+                "type": "website",
+                "url": "https://empire-compass.vercel.app/R186491/team"
+            },
+            {
+                "type": "github",
+                "url": "https://github.com/okarras/empire-Compass/"
+            }
+        ]
+    },
+    {
+        "title": "AutoML-Agent",
+        "description": "Automated Machine Learning Agent implementation.",
+        "tags": [
+            "AutoML",
+            "AI",
+            "Agent"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/amirrezaalasti/AutoML-Agent"
+            }
+        ]
+    },
+    {
+        "title": "OntoAligner",
+        "description": "A comprehensive modular and robust Python toolkit for ontology alignment.",
+        "tags": [
+            "Ontology",
+            "AI",
+            "Python",
+            "Toolkit"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/sciknoworg/OntoAligner"
+            }
+        ]
+    },
+    {
+        "title": "IMap",
+        "description": "Developed 'IMap', an AI-driven optimization system which was also my Bachelor's thesis subject. Implemented shelf object detection systems, built a PWA POS system, and enhanced existing ERP systems.",
+        "tags": [
+            "AI",
+            "Optimization",
+            "Thesis"
+        ],
+        "links": []
+    },
+    {
+        "title": "TIB AIssistant",
+        "description": "AI assistant for researchers developed at TIB.",
+        "tags": [
+            "AI",
+            "LLM",
+            "Assistant"
+        ],
+        "links": [
+            {
+                "type": "website",
+                "url": "https://gitlab.com/TIBHannover/orkg/tib-aissistant/web-app"
+            }
+        ]
+    },
+    {
+        "title": "Computer Vision for Medical & Industrial Apps",
+        "description": "Master course repository at Leibniz University Hannover.",
+        "tags": [
+            "Computer Vision",
+            "Medical",
+            "Industrial"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/amirrezaalasti/Computer-vision-for-medical-and-industrial-applications"
+            }
+        ]
+    },
+    {
+        "title": "Sentiment Segmentation",
+        "description": "Project focused on sentiment analysis and segmentation.",
+        "tags": [
+            "NLP",
+            "Sentiment Analysis"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/amirrezaalasti/sentiment_segmentation"
+            }
+        ]
+    },
+    {
+        "title": "Neural Networks Review",
+        "description": "Review and implementation of Neural Networks and Generative Networks.",
+        "tags": [
+            "Deep Learning",
+            "Generative AI"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/amirrezaalasti/Neural-Networks-And-Generative-Networks-Review"
+            }
+        ]
+    }
+]

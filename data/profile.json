@@ -1,0 +1,126 @@
+{
+    "name": "Amirreza Alasti",
+    "headline": "AI Researcher | Master Student in Artificial Intelligence @ Leibniz University Hannover | Full Stack Developer",
+    "about": "With a strong foundation in Machine Learning, Computer Vision, Embedded Systems, Reinforcement Learning, and Data Mining, I transitioned my focus last year to a new trajectory as an Artificial Intelligence Engineer and Data Scientist. This shift was inspired by my participation in courses covering Data Science and Machine Learning. The multidisciplinary nature of these fields continues to captivate my interest, driving my pursuit of excellence in the realms of Artificial Intelligence and Data Science.",
+    "location": "Hannover, Lower Saxony, Germany",
+    "socials": {
+        "linkedin": "https://www.linkedin.com/in/amirreza-alasti-61450b1aa/",
+        "github": "https://github.com/amirrezaalasti",
+        "scholar": "https://scholar.google.com/citations?user=cEH7bAgAAAAJ&hl=en"
+    },
+    "experience": [
+        {
+            "title": "Data Scientist",
+            "company": "Sonova Group",
+            "type": "Internship",
+            "period": "Oct 2025 - Present",
+            "location": "Lower Saxony, Germany",
+            "description": "Working as a Data Scientist intern, applying advanced machine learning techniques to real-world data challenges in the hearing care industry."
+        },
+        {
+            "title": "Student Assistant",
+            "company": "TIB – Leibniz-Informationszentrum Technik und Naturwissenschaften",
+            "type": "Part-time",
+            "period": "Nov 2024 - Present",
+            "location": "Hannover, Lower Saxony, Germany",
+            "description": "Studentische Hilfskraft bei IDaS – Data Science and Digital Libraries. Key contributions include developing the 'TIB AIssistant', an AI-powered assistant for researchers, and leading the development of 'EmpiRE Compass', an Open Source Research Impact Dashboard. I also contributed to 'OntoAligner', an ontology alignment library, and implemented the 'LLM4Synthesis' project codebase."
+        },
+        {
+            "title": "Teacher",
+            "company": "i3center",
+            "type": "Part-time",
+            "period": "Dec 2023 - Aug 2024",
+            "location": "Mashhad, Razavi Khorasan, Iran",
+            "description": "Mentored over 100 students in Machine Learning, Deep Learning, Data Analysis, and Software Engineering. I led interactive workshops, trained students in end-to-end project development, and organized comprehensive exams to assess their progress."
+        },
+        {
+            "title": "Software & AI Engineer",
+            "company": "SamianSoft",
+            "type": "Full-time",
+            "period": "Jul 2022 - Jul 2024",
+            "location": "Mashhad, Razavi Khorasan, Iran",
+            "description": "Developed 'IMap', an AI-driven optimization system which was also my Bachelor's thesis subject. Implemented shelf object detection systems, built a PWA POS system, and enhanced existing ERP systems. I also played a key role in mentoring interns and facilitating university-company collaborations."
+        }
+    ],
+    "education": [
+        {
+            "school": "Leibniz Universität Hannover",
+            "degree": "Master's degree, Computer Engineering",
+            "period": "Oct 2024 - Present",
+            "grade": "1.0",
+            "description": "Specializing in Artificial Intelligence. Active in research projects involving Computer Vision and Medical Applications."
+        },
+        {
+            "school": "Ferdowsi University of Mashhad",
+            "degree": "Bachelor's degree, Computer Engineering",
+            "period": "Sep 2019 - Feb 2024",
+            "grade": "17.06/20 (Last two years: 19.36/20)",
+            "description": "Focused on Software Engineering and AI. Thesis: IMap - AI-driven optimization system."
+        },
+        {
+            "school": "Technical and Vocational University",
+            "degree": "Associate Degree, Electrical/Electronics Maintenance and Repair Technology",
+            "grade": "84.6"
+        }
+    ],
+    "skills": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Science",
+        "Computer Vision",
+        "Deep Learning",
+        "Full Stack Development",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Python",
+        "SQL",
+        "Git",
+        "Embedded Systems",
+        "Reinforcement Learning",
+        "Data Mining",
+        "Problem Solving"
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "proficiency": "Full professional proficiency"
+        },
+        {
+            "language": "Persian",
+            "proficiency": "Native or bilingual proficiency"
+        },
+        {
+            "language": "German",
+            "proficiency": "Full professional proficiency"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Deutschlandstipendium",
+            "issuer": "Leibniz Universität Hannover",
+            "date": "2024",
+            "description": "Awarded the Deutschlandstipendium scholarship for outstanding academic achievement and social commitment."
+        }
+    ],
+    "volunteering": [
+        {
+            "role": "Executive Committee Member",
+            "organization": "International Conference on Computer and Knowledge Engineering (ICCKE)",
+            "date": "Nov 2023",
+            "description": "Held on Ferdowsi University of Mashhad."
+        },
+        {
+            "role": "Volunteer",
+            "organization": "AI Grids",
+            "date": "2024",
+            "description": "Volunteered at AI Grids."
+        },
+        {
+            "role": "Volunteer",
+            "organization": "WeAreDevelopers",
+            "date": "2024",
+            "description": "Volunteered at WeAreDevelopers World Congress, assisting with event organization and attendee support."
+        }
+    ]
+}
