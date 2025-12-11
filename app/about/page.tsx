@@ -22,7 +22,7 @@ export default function About() {
               </div>
               <div className="relative h-64 md:h-full min-h-[250px] rounded-2xl overflow-hidden glass">
                 <Image 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Leibniz-Universit%C3%A4t_Hannover.svg/1200px-Leibniz-Universit%C3%A4t_Hannover.svg.png" 
+                  src="https://www.uni-hannover.de/typo3temp/assets/_processed_/6/4/csm_e454b9bee479fdd5267495b3f1727b68012fd8de-fp-5-2-0-0_647f82dacd.jpg" 
                   alt="Leibniz University Hannover" 
                   fill 
                   className="object-cover"
