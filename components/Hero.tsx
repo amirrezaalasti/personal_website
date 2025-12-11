@@ -22,11 +22,12 @@ export default function Hero() {
           className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl mb-4"
         >
           <Image 
-            src="/images/amirreza1.jpeg" 
+            src="https://media.licdn.com/dms/image/v2/D4E03AQHmvc3m4ONjSQ/profile-displayphoto-scale_200_200/B4EZo7gWYCHcAc-/0/1761934927936?e=1767225600&v=beta&t=cbJhthfCmCpSxtvFhx3KDgHIblLwfrTBh_TtwTslQis" 
             alt={profile.name} 
             fill 
             className="object-cover"
             priority
+            unoptimized
           />
         </motion.div>
         <motion.h2 

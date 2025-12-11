@@ -22,10 +22,11 @@ export default function About() {
               </div>
               <div className="relative h-64 md:h-full min-h-[250px] rounded-2xl overflow-hidden glass">
                 <Image 
-                  src="/images/leibnizuniversity.png" 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Leibniz-Universit%C3%A4t_Hannover.svg/1200px-Leibniz-Universit%C3%A4t_Hannover.svg.png" 
                   alt="Leibniz University Hannover" 
                   fill 
                   className="object-cover"
+                  unoptimized
                 />
               </div>
             </div>
