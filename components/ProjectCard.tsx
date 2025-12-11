@@ -1,5 +1,7 @@
+"use client";
+
 import { Github, ExternalLink } from "lucide-react";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface ProjectProps {
   title: string;
@@ -10,7 +12,14 @@ interface ProjectProps {
 
 export default function ProjectCard({ title, description, tags, links }: ProjectProps) {
   return (
-    <div className="glass-card rounded-xl p-6 flex flex-col h-full group">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ y: -5 }}
+      className="glass-card rounded-xl p-6 flex flex-col h-full group"
+    >
       <div className="flex justify-between items-start mb-4">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{title}</h3>
         <div className="flex gap-3">
@@ -36,6 +45,6 @@ export default function ProjectCard({ title, description, tags, links }: Project
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
