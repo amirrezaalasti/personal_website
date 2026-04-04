@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
   assetPrefix: basePath,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.fei.uni-hannover.de",
+        pathname: "/fileadmin/**",
+      },
+    ],
   },
 };
 

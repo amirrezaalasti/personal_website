@@ -30,18 +30,33 @@ export default function Projects() {
             <div className="space-y-4">
               {publications.map((pub, index) => (
                 <div key={index} className="glass-card rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{pub.title}</h3>
                     <div className="text-gray-700 dark:text-gray-400 text-sm font-medium">{pub.venue} &middot; {pub.year}</div>
                   </div>
-                  <a 
-                    href={pub.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="px-6 py-2 rounded-full bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-blue-600 dark:text-blue-400 text-sm font-medium transition-colors whitespace-nowrap"
-                  >
-                    View Paper
-                  </a>
+                  <div className="flex flex-wrap gap-2 shrink-0">
+                    <a
+                      href={pub.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-2 rounded-full bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-blue-600 dark:text-blue-400 text-sm font-medium transition-colors whitespace-nowrap"
+                    >
+                      {"linkLabel" in pub && pub.linkLabel ? pub.linkLabel : "View Paper"}
+                    </a>
+                    {"extraLinks" in pub &&
+                      Array.isArray(pub.extraLinks) &&
+                      pub.extraLinks.map((extra: { label: string; url: string }, i: number) => (
+                        <a
+                          key={i}
+                          href={extra.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-6 py-2 rounded-full bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-gray-900 dark:text-gray-200 text-sm font-medium transition-colors whitespace-nowrap border border-black/10 dark:border-white/10"
+                        >
+                          {extra.label}
+                        </a>
+                      ))}
+                  </div>
                 </div>
               ))}
             </div>

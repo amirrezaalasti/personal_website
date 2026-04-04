@@ -1,14 +1,58 @@
 [
     {
+        "title": "Learning to Play Blackjack: A Curriculum Learning Perspective",
+        "year": "2026",
+        "venue": "International Conference on Distributed Artificial Intelligence (DAI 2025), oral presentation · Nov 21, 2025 · arXiv:2604.00076",
+        "link": "https://arxiv.org/abs/2604.00076",
+        "linkLabel": "arXiv",
+        "extraLinks": [
+            {
+                "label": "Code",
+                "url": "https://github.com/LUH-AI-devnerds/llm-guided-curriculum-rl"
+            }
+        ]
+    },
+    {
+        "title": "EmpiRE-Compass: A Neuro-Symbolic Dashboard for Sustainable and Dynamic Knowledge Exploration, Synthesis, and Reuse",
+        "year": "2026",
+        "venue": "32nd International Working Conference on Requirements Engineering: Foundations for Software Quality (REFSQ 2026) · Feb 25, 2026",
+        "link": "https://arxiv.org/abs/2602.22276",
+        "linkLabel": "arXiv",
+        "extraLinks": [
+            {
+                "label": "Dashboard",
+                "url": "https://empire-compass.tib.eu/R186491/team"
+            },
+            {
+                "label": "Google Scholar",
+                "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cEH7bAgAAAAJ&citation_for_view=cEH7bAgAAAAJ:9yKSN-GCB0IC"
+            }
+        ]
+    },
+    {
+        "title": "From PDFs to Structured and FAIR Knowledge: Organizing NLP4RE ID Cards in the Open Research Knowledge Graph — A Pipeline and Dashboard Integration for Improved Access and Reuse of NLP4RE Knowledge",
+        "year": "2026",
+        "venue": "Mar 26, 2026",
+        "link": "https://github.com/amirrezaalasti/NLP4RE-IDCard-Processor",
+        "linkLabel": "Repository"
+    },
+    {
         "title": "OntoAligner: A Comprehensive Modular and Robust Python Toolkit for Ontology Alignment",
         "year": "2025",
         "venue": "arXiv preprint / TIB",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cEH7bAgAAAAJ&citation_for_view=cEH7bAgAAAAJ:u5HHmVD_uO8C"
     },
     {
-        "title": "Towards AI-supported Research: A Vision of the TIB AIssistant",
+        "title": "Towards AI-Supported Research: a Vision of the TIB AIssistant",
         "year": "2025",
-        "venue": "TIB Hannover",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cEH7bAgAAAAJ&citation_for_view=cEH7bAgAAAAJ:d1gkVwhDpl0C"
+        "venue": "arXiv:2512.16447 (cs.AI) · submitted Dec 18, 2025 · TIB Hannover",
+        "link": "https://arxiv.org/abs/2512.16447",
+        "linkLabel": "arXiv",
+        "extraLinks": [
+            {
+                "label": "Google Scholar",
+                "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cEH7bAgAAAAJ&citation_for_view=cEH7bAgAAAAJ:d1gkVwhDpl0C"
+            }
+        ]
     }
 ]

@@ -118,6 +118,28 @@ export default function About() {
                   </div>
                   <div className="text-yellow-600 dark:text-yellow-400 font-medium mb-2">{award.issuer}</div>
                   <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed font-medium">{award.description}</p>
+                  {"imageUrl" in award && typeof award.imageUrl === "string" && (
+                    <div className="relative mt-4 w-full max-w-2xl aspect-video rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
+                      <Image
+                        src={award.imageUrl}
+                        alt={`${award.title} — ceremony group photo (FEI / LUH)`}
+                        fill
+                        className="object-cover"
+                        unoptimized
+                      />
+                    </div>
+                  )}
+                  {"url" in award && typeof award.url === "string" && (
+                    <a
+                      href={award.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      Faculty announcement
+                      <ExternalLink className="w-4 h-4 shrink-0" aria-hidden />
+                    </a>
+                  )}
                 </div>
               ))}
             </div>

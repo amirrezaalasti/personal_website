@@ -10,11 +10,42 @@
         "links": [
             {
                 "type": "website",
-                "url": "https://empire-compass.vercel.app/R186491/team"
+                "url": "https://empire-compass.tib.eu/R186491/team"
             },
             {
                 "type": "github",
                 "url": "https://github.com/okarras/empire-Compass/"
+            }
+        ]
+    },
+    {
+        "title": "LLM-Guided Curriculum RL (Blackjack)",
+        "description": "Research framework for LLM-guided curriculum learning in multi-agent RL (Blackjack). Code for the DAI 2025 oral paper.",
+        "tags": [
+            "Reinforcement Learning",
+            "LLM",
+            "Research"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/LUH-AI-devnerds/llm-guided-curriculum-rl"
+            }
+        ]
+    },
+    {
+        "title": "NLP4RE ID Card Processor",
+        "description": "Extract structured JSON from NLP4RE PDF ID cards and prepare data for the Open Research Knowledge Graph (ORKG).",
+        "tags": [
+            "NLP",
+            "ORKG",
+            "PDF",
+            "Research"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/amirrezaalasti/NLP4RE-IDCard-Processor"
             }
         ]
     },

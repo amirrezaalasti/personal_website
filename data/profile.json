@@ -97,6 +97,14 @@
     ],
     "awards": [
         {
+            "title": "Dean's List",
+            "issuer": "Faculty of Electrical Engineering and Computer Science (FEI), Leibniz Universität Hannover",
+            "date": "Studienjahr 2025",
+            "description": "Recognized among the top-performing students in Informatics for study year 2025. The Dean's List honors excellent grades and steady progress in the standard curriculum; recipients are celebrated at an annual faculty ceremony.",
+            "url": "https://www.fei.uni-hannover.de/aktuelles/deans-list-auszeichnung",
+            "imageUrl": "https://www.fei.uni-hannover.de/fileadmin/fei/Bilder/Deans_List/Dean_s_List_2025/0_Gruppenbild.jpeg"
+        },
+        {
             "title": "Deutschlandstipendium",
             "issuer": "Leibniz Universität Hannover",
             "date": "2025",
