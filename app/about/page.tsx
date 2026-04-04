@@ -4,6 +4,7 @@ import Image from "next/image";
 import profile from "@/data/profile.json";
 import certificates from "@/data/certificates.json";
 import { Briefcase, GraduationCap, Code, Award, Heart, FileCheck, ExternalLink, Globe, Mail } from "lucide-react";
+import leibnizCampus from "../../public/images/leibnizuniversity.png";
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
               </div>
               <div className="relative h-64 md:h-full min-h-[250px] rounded-2xl overflow-hidden glass">
                 <Image 
-                  src="https://www.uni-hannover.de/typo3temp/assets/_processed_/6/4/csm_e454b9bee479fdd5267495b3f1727b68012fd8de-fp-5-2-0-0_647f82dacd.jpg" 
+                  src={leibnizCampus} 
                   alt="Leibniz University Hannover" 
                   fill 
                   className="object-cover"

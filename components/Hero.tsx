@@ -5,9 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import profile from "@/data/profile.json";
-
-const publicImage = (path: string) =>
-  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+import heroPhoto from "../public/images/amirreza.jpeg";
 
 export default function Hero() {
   return (
@@ -25,7 +23,7 @@ export default function Hero() {
           className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl mb-4"
         >
           <Image 
-            src={publicImage("/images/amirreza.jpeg")} 
+            src={heroPhoto} 
             alt={profile.name} 
             fill 
             className="object-cover"
