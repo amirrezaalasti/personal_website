@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WelcomeOverlay from "@/components/WelcomeOverlay";
 import NewsFeed from "@/components/NewsFeed";
 import ProjectCard from "@/components/ProjectCard";
 import projects from "@/data/projects.json";
@@ -12,6 +13,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col">
+      <WelcomeOverlay />
       <Navbar />
       
       <Hero />
