@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Amirreza Alasti | AI Researcher & Full Stack Developer",
   description: "Portfolio of Amirreza Alasti, AI Researcher and Full Stack Developer.",
+  verification: {
+    google: "HMFW3O-QOxy3BShl0tZ96OSKEqWylnbRUinncGLwA-s",
+  },
 };
 
 export default function RootLayout({
