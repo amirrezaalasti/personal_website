@@ -42,8 +42,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      # Do not use static_site_generator: next — it creates next.config.js, which Next loads
-      # before next.config.ts and drops this repo's basePath, env, and assetPrefix settings.
+      # Do not use static_site_generator: next — it can inject next.config.js and conflict with next.config.ts.
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Restore cache
