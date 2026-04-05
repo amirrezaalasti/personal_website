@@ -5,6 +5,8 @@ import profile from "@/data/profile.json";
 import certificates from "@/data/certificates.json";
 import { Briefcase, GraduationCap, Code, Award, Heart, FileCheck, ExternalLink, Globe, Mail } from "lucide-react";
 import leibnizCampus from "../../public/images/leibnizuniversity.png";
+import experienceVisual from "../../public/images/experience.png";
+import educationVisual from "../../public/images/education.png";
 
 export default function About() {
   return (
@@ -38,17 +40,43 @@ export default function About() {
             <div className="flex items-center gap-3 text-2xl font-bold text-gray-900 dark:text-gray-100">
               <Briefcase className="text-blue-600 dark:text-blue-400" /> Experience
             </div>
-            <div className="space-y-6">
-              {profile.experience.map((job, index) => (
-                <div key={index} className="glass-card rounded-xl p-6">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-black dark:text-white">{job.title}</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{job.period}</span>
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+              <div className="space-y-6 order-2 lg:order-1 min-w-0">
+                {profile.experience.map((job, index) => (
+                  <div key={index} className="glass-card rounded-xl p-6">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                      <h3 className="text-xl font-bold text-black dark:text-white">{job.title}</h3>
+                      <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{job.period}</span>
+                    </div>
+                    <div className="text-blue-600 dark:text-blue-400 font-medium mb-4">{job.company} &middot; {job.type}</div>
+                    <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed font-medium">{job.description}</p>
                   </div>
-                  <div className="text-blue-600 dark:text-blue-400 font-medium mb-4">{job.company} &middot; {job.type}</div>
-                  <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed font-medium">{job.description}</p>
+                ))}
+              </div>
+              <div className="order-1 lg:order-2 lg:sticky lg:top-28 w-full">
+                <div className="relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/[0.04] shadow-xl shadow-blue-500/5 dark:shadow-blue-500/10 ring-1 ring-black/5 dark:ring-white/10">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/5] lg:max-h-[min(520px,70vh)] w-full">
+                    <Image
+                      src={experienceVisual}
+                      alt="Professional experience and career journey"
+                      fill
+                      className="object-contain object-center p-3 sm:p-4"
+                      sizes="(max-width: 1024px) 100vw, 400px"
+                      unoptimized
+                    />
+                  </div>
+                  <div
+                    className="pointer-events-none absolute inset-0 rounded-2xl opacity-90"
+                    style={{
+                      background:
+                        "linear-gradient(145deg, rgba(59,130,246,0.08) 0%, transparent 42%, transparent 58%, rgba(147,51,234,0.07) 100%)",
+                    }}
+                  />
                 </div>
-              ))}
+                <p className="mt-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide">
+                  Journey across industry &amp; research
+                </p>
+              </div>
             </div>
           </section>
 
@@ -57,17 +85,43 @@ export default function About() {
             <div className="flex items-center gap-3 text-2xl font-bold text-gray-900 dark:text-gray-100">
               <GraduationCap className="text-purple-600 dark:text-purple-400" /> Education
             </div>
-            <div className="space-y-6">
-              {profile.education.map((edu, index) => (
-                <div key={index} className="glass-card rounded-xl p-6">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-black dark:text-white">{edu.school}</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{edu.period}</span>
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+              <div className="order-1 lg:order-1 lg:sticky lg:top-28 w-full">
+                <div className="relative rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/[0.04] shadow-xl shadow-purple-500/5 dark:shadow-purple-500/10 ring-1 ring-black/5 dark:ring-white/10">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/5] lg:max-h-[min(520px,70vh)] w-full">
+                    <Image
+                      src={educationVisual}
+                      alt="Education and academic background"
+                      fill
+                      className="object-contain object-center p-3 sm:p-4"
+                      sizes="(max-width: 1024px) 100vw, 400px"
+                      unoptimized
+                    />
                   </div>
-                  <div className="text-purple-600 dark:text-purple-400 font-medium mb-2">{edu.degree}</div>
-                  {edu.grade && <div className="text-sm text-gray-600 dark:text-gray-500 font-medium">Grade: {edu.grade}</div>}
+                  <div
+                    className="pointer-events-none absolute inset-0 rounded-2xl opacity-90"
+                    style={{
+                      background:
+                        "linear-gradient(215deg, rgba(147,51,234,0.09) 0%, transparent 40%, transparent 60%, rgba(59,130,246,0.06) 100%)",
+                    }}
+                  />
                 </div>
-              ))}
+                <p className="mt-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide">
+                  Degrees &amp; learning path
+                </p>
+              </div>
+              <div className="space-y-6 order-2 lg:order-2 min-w-0">
+                {profile.education.map((edu, index) => (
+                  <div key={index} className="glass-card rounded-xl p-6">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                      <h3 className="text-xl font-bold text-black dark:text-white">{edu.school}</h3>
+                      <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{edu.period}</span>
+                    </div>
+                    <div className="text-purple-600 dark:text-purple-400 font-medium mb-2">{edu.degree}</div>
+                    {edu.grade && <div className="text-sm text-gray-600 dark:text-gray-500 font-medium">Grade: {edu.grade}</div>}
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
 
