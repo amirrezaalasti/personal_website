@@ -25,8 +25,8 @@
 
 @layer base {
   :root {
-    --background: hsl(0 0% 98%);
-    --foreground: hsl(240 10% 3.9%);
+    --background: hsl(210 20% 97%);
+    --foreground: hsl(222 47% 11%);
     --card: hsl(0 0% 100%);
     --card-foreground: hsl(240 10% 3.9%);
     --popover: hsl(0 0% 100%);
@@ -77,9 +77,9 @@
   body {
     @apply bg-background text-foreground antialiased;
     background-image: 
-      radial-gradient(at 0% 0%, hsla(253,16%,90%,1) 0, transparent 50%), 
-      radial-gradient(at 50% 0%, hsla(225,39%,90%,1) 0, transparent 50%), 
-      radial-gradient(at 100% 0%, hsla(339,49%,90%,1) 0, transparent 50%);
+      radial-gradient(at 0% 0%, hsla(253, 40%, 92%, 0.9) 0, transparent 52%), 
+      radial-gradient(at 50% 0%, hsla(225, 45%, 91%, 0.85) 0, transparent 50%), 
+      radial-gradient(at 100% 0%, hsla(280, 35%, 93%, 0.9) 0, transparent 52%);
   }
   .dark body {
     background-image: 
@@ -90,9 +90,9 @@
 }
 
 .glass {
-  @apply bg-white/70 dark:bg-white/5 backdrop-blur-md border border-black/10 dark:border-white/10 shadow-xl;
+  @apply bg-white/95 text-gray-900 shadow-xl backdrop-blur-md border border-black/[0.12] dark:bg-white/5 dark:text-inherit dark:border-white/10;
 }
 
 .glass-card {
-  @apply bg-white/50 dark:bg-card/30 backdrop-blur-sm border border-black/5 dark:border-white/10 shadow-lg hover:bg-white/80 dark:hover:bg-card/40 transition-colors duration-300;
+  @apply bg-white/95 text-gray-900 shadow-lg backdrop-blur-sm border border-black/[0.1] hover:bg-white dark:bg-card/30 dark:text-inherit dark:border-white/10 dark:hover:bg-card/40 transition-colors duration-300;
 }

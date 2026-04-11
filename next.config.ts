@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath,
   assetPrefix: basePath,
+  transpilePackages: ["react-force-graph-2d", "force-graph", "react-kapsule"],
   images: {
     unoptimized: true,
     remotePatterns: [

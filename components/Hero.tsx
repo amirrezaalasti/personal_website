@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
-          className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl mb-4"
+          className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gray-200 shadow-2xl mb-4 dark:border-white/15"
         >
           <Image 
             src={heroPhoto} 
@@ -35,7 +35,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-sm md:text-base font-medium text-blue-400 tracking-wider uppercase"
+          className="text-sm md:text-base font-medium text-blue-800 tracking-wider uppercase dark:text-blue-400"
         >
           Portfolio
         </motion.h2>
@@ -45,13 +45,16 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
           className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
-          Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">{profile.name}</span>
+          Hi, I&apos;m{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-purple-800 dark:from-blue-400 dark:via-blue-400 dark:to-purple-400">
+            {profile.name}
+          </span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-xl md:text-2xl text-gray-900 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium"
+          className="text-xl md:text-2xl text-gray-800 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium"
         >
           {profile.headline}
         </motion.p>
@@ -70,7 +73,7 @@ export default function Hero() {
           </Link>
           <Link 
             href="/about"
-            className="px-8 py-3 rounded-full glass text-gray-900 dark:text-white font-medium hover:bg-black/5 dark:hover:bg-white/10 transition-all hover:scale-105"
+            className="px-8 py-3 rounded-full border border-black/15 bg-white text-gray-900 font-semibold shadow-sm hover:bg-gray-50 dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-none dark:backdrop-blur-sm dark:hover:bg-white/15 transition-all hover:scale-105"
           >
             About Me
           </Link>

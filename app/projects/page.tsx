@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Projects</h1>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-800 dark:text-gray-400 max-w-2xl mx-auto font-medium">
               A collection of my work in AI, Data Science, and Software Engineering.
             </p>
           </div>
@@ -32,14 +32,14 @@ export default function Projects() {
                 <div key={index} className="glass-card rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                   <div className="min-w-0 flex-1">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{pub.title}</h3>
-                    <div className="text-gray-700 dark:text-gray-400 text-sm font-medium">{pub.venue} &middot; {pub.year}</div>
+                    <div className="text-gray-800 dark:text-gray-400 text-sm font-medium leading-relaxed">{pub.venue} &middot; {pub.year}</div>
                   </div>
                   <div className="flex flex-wrap gap-2 shrink-0">
                     <a
                       href={pub.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-6 py-2 rounded-full bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-blue-600 dark:text-blue-400 text-sm font-medium transition-colors whitespace-nowrap"
+                      className="px-6 py-2 rounded-full bg-black/[0.06] dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-blue-800 dark:text-blue-400 text-sm font-semibold transition-colors whitespace-nowrap"
                     >
                       {"linkLabel" in pub && pub.linkLabel ? pub.linkLabel : "View Paper"}
                     </a>

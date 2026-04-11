@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
+import KnowledgeGraphSection from "@/components/KnowledgeGraphSection";
 import NewsFeed from "@/components/NewsFeed";
 import ProjectCard from "@/components/ProjectCard";
 import projects from "@/data/projects.json";
@@ -18,13 +19,15 @@ export default function Home() {
       
       <Hero />
 
+      <KnowledgeGraphSection />
+
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Latest News */}
           <div>
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Latest News</h2>
-              <Link href="/news" className="text-sm text-blue-400 hover:text-blue-300 flex items-center gap-1">
+              <Link href="/news" className="text-sm font-semibold text-blue-800 hover:text-blue-950 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-1">
                 View All <ArrowRight size={16} />
               </Link>
             </div>
@@ -37,7 +40,7 @@ export default function Home() {
           <div>
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Featured Projects</h2>
-              <Link href="/projects" className="text-sm text-blue-400 hover:text-blue-300 flex items-center gap-1">
+              <Link href="/projects" className="text-sm font-semibold text-blue-800 hover:text-blue-950 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-1">
                 View Portfolio <ArrowRight size={16} />
               </Link>
             </div>

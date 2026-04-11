@@ -46,7 +46,7 @@ export default function About() {
                   <div key={index} className="glass-card rounded-xl p-6">
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                       <h3 className="text-xl font-bold text-black dark:text-white">{job.title}</h3>
-                      <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{job.period}</span>
+                      <span className="text-sm text-gray-700 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{job.period}</span>
                     </div>
                     <div className="text-blue-600 dark:text-blue-400 font-medium mb-4">{job.company} &middot; {job.type}</div>
                     <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed font-medium">{job.description}</p>
@@ -73,7 +73,7 @@ export default function About() {
                     }}
                   />
                 </div>
-                <p className="mt-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide">
+                <p className="mt-3 text-center text-xs font-medium text-gray-700 dark:text-gray-400 tracking-wide">
                   Journey across industry &amp; research
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function About() {
                     }}
                   />
                 </div>
-                <p className="mt-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide">
+                <p className="mt-3 text-center text-xs font-medium text-gray-700 dark:text-gray-400 tracking-wide">
                   Degrees &amp; learning path
                 </p>
               </div>
@@ -115,10 +115,10 @@ export default function About() {
                   <div key={index} className="glass-card rounded-xl p-6">
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                       <h3 className="text-xl font-bold text-black dark:text-white">{edu.school}</h3>
-                      <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{edu.period}</span>
+                      <span className="text-sm text-gray-700 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{edu.period}</span>
                     </div>
                     <div className="text-purple-600 dark:text-purple-400 font-medium mb-2">{edu.degree}</div>
-                    {edu.grade && <div className="text-sm text-gray-600 dark:text-gray-500 font-medium">Grade: {edu.grade}</div>}
+                    {edu.grade && <div className="text-sm text-gray-700 dark:text-gray-500 font-medium">Grade: {edu.grade}</div>}
                   </div>
                 ))}
               </div>
@@ -151,7 +151,7 @@ export default function About() {
                 {profile.languages.map((lang, index) => (
                   <div key={index} className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900 dark:text-white">{lang.language}</span>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">{lang.proficiency}</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-400">{lang.proficiency}</span>
                   </div>
                 ))}
               </div>
@@ -168,7 +168,7 @@ export default function About() {
                 <div key={index} className="glass-card rounded-xl p-6">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h3 className="text-xl font-bold text-black dark:text-white">{award.title}</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{award.date}</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{award.date}</span>
                   </div>
                   <div className="text-yellow-600 dark:text-yellow-400 font-medium mb-2">{award.issuer}</div>
                   <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed font-medium">{award.description}</p>
@@ -209,7 +209,7 @@ export default function About() {
                 <div key={index} className="glass-card rounded-xl p-6">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h3 className="text-xl font-bold text-black dark:text-white">{vol.role}</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{vol.date}</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-400 bg-black/5 dark:bg-white/5 px-3 py-1 rounded-full font-medium">{vol.date}</span>
                   </div>
                   <div className="text-red-600 dark:text-red-400 font-medium mb-2">{vol.organization}</div>
                   <p className="text-gray-700 dark:text-gray-400 text-sm leading-relaxed font-medium">{vol.description}</p>
@@ -228,9 +228,9 @@ export default function About() {
                 <a key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl p-6 flex items-center justify-between group">
                   <div>
                     <h3 className="text-lg font-bold text-black dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{cert.title}</h3>
-                    <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">{cert.issuer} &middot; {cert.date}</div>
+                    <div className="text-sm text-gray-700 dark:text-gray-400 font-medium">{cert.issuer} &middot; {cert.date}</div>
                   </div>
-                  <ExternalLink size={18} className="text-gray-600 group-hover:text-black dark:group-hover:text-white transition-colors" />
+                  <ExternalLink size={18} className="text-gray-700 group-hover:text-black dark:group-hover:text-white transition-colors" />
                 </a>
               ))}
             </div>
@@ -242,16 +242,16 @@ export default function About() {
               <Mail className="text-purple-600 dark:text-purple-400" /> Contact Me
             </div>
             <div className="glass rounded-2xl p-8">
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
+              <p className="text-gray-800 dark:text-gray-300 mb-6 font-medium">
                 Feel free to reach out to me via email:
               </p>
               <div className="space-y-4">
                 <a href="mailto:amirrezaalasti@gmail.com" className="flex items-center gap-3 text-gray-900 dark:text-white hover:text-blue-500 transition-colors">
-                  <Mail size={20} className="text-blue-400" />
+                  <Mail size={20} className="text-blue-700 dark:text-blue-400 shrink-0" />
                   amirrezaalasti@gmail.com
                 </a>
                 <a href="mailto:amirreza.alasti@stud.uni-hannover.de" className="flex items-center gap-3 text-gray-900 dark:text-white hover:text-blue-500 transition-colors">
-                  <Mail size={20} className="text-blue-400" />
+                  <Mail size={20} className="text-blue-700 dark:text-blue-400 shrink-0" />
                   amirreza.alasti@stud.uni-hannover.de
                 </a>
               </div>

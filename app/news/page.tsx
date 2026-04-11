@@ -11,7 +11,7 @@ export default function News() {
         <div className="max-w-3xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">News & Updates</h1>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-800 dark:text-gray-400 font-medium">
               Latest updates from my professional journey.
             </p>
           </div>

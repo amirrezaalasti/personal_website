@@ -77,7 +77,7 @@ export default function WelcomeOverlay() {
           />
 
           <motion.div
-            className="relative z-10 w-full max-w-lg rounded-3xl border border-white/15 bg-white/85 dark:bg-zinc-900/90 shadow-2xl overflow-hidden backdrop-blur-md"
+            className="relative z-10 w-full max-w-lg rounded-3xl border border-black/10 bg-white shadow-2xl overflow-hidden backdrop-blur-md dark:border-white/15 dark:bg-zinc-900/95"
             initial={{ opacity: 0, scale: 0.92, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
@@ -115,7 +115,7 @@ export default function WelcomeOverlay() {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15, duration: 0.4 }}
-                className="flex items-center justify-center gap-2 text-blue-500 dark:text-blue-400 mb-2"
+                className="flex items-center justify-center gap-2 text-blue-800 dark:text-blue-400 mb-2"
               >
                 <Sparkles className="w-4 h-4 shrink-0" aria-hidden />
                 <span className="text-xs font-semibold uppercase tracking-widest">Hello</span>
@@ -136,7 +136,7 @@ export default function WelcomeOverlay() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.4 }}
-                className="text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed font-medium max-w-md mx-auto mb-8"
+                className="text-gray-800 dark:text-gray-300 text-sm sm:text-base leading-relaxed font-medium max-w-md mx-auto mb-8"
               >
                 I&apos;m <span className="text-gray-900 dark:text-white font-semibold">{profile.name}</span>
                 — here you&apos;ll find my AI research, projects, and publications. Thanks for stopping by.

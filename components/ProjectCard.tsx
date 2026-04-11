@@ -29,7 +29,7 @@ export default function ProjectCard({ title, description, tags, links }: Project
               href={link.url} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+              className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
               title={
                 link.type === "github"
                   ? "View code"
@@ -49,10 +49,10 @@ export default function ProjectCard({ title, description, tags, links }: Project
           ))}
         </div>
       </div>
-      <p className="text-gray-700 dark:text-gray-400 mb-6 flex-grow font-medium">{description}</p>
+      <p className="text-gray-800 dark:text-gray-400 mb-6 flex-grow font-medium leading-relaxed">{description}</p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
-          <span key={tag} className="px-3 py-1 text-xs font-semibold rounded-full bg-black/10 dark:bg-white/5 text-gray-800 dark:text-gray-300 border border-black/10 dark:border-white/10">
+          <span key={tag} className="px-3 py-1 text-xs font-semibold rounded-full bg-black/[0.06] dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-black/15 dark:border-white/10">
             {tag}
           </span>
         ))}
