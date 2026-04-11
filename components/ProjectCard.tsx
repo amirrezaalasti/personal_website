@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ProjectProps {
@@ -30,9 +30,21 @@ export default function ProjectCard({ title, description, tags, links }: Project
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
-              title={link.type === 'github' ? 'View Code' : 'View Project'}
+              title={
+                link.type === "github"
+                  ? "View code"
+                  : link.type === "paper"
+                    ? "Paper (arXiv)"
+                    : "View project"
+              }
             >
-              {link.type === 'github' ? <Github size={20} /> : <ExternalLink size={20} />}
+              {link.type === "github" ? (
+                <Github size={20} />
+              ) : link.type === "paper" ? (
+                <FileText size={20} />
+              ) : (
+                <ExternalLink size={20} />
+              )}
             </a>
           ))}
         </div>

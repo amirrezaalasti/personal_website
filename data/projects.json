@@ -1,13 +1,32 @@
 [
     {
+        "title": "BBDC 2026 — Detection of Age-Related Diseases",
+        "description": "Bremen Big Data Challenge 2026: winning solution (1st place, March 31, 2026). Machine learning pipeline for age-related disease detection from multimodal data.",
+        "tags": [
+            "Machine Learning",
+            "Healthcare",
+            "Challenge"
+        ],
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/amirrezaalasti/BBDC2026-Detection-of-Age-Related-Diseases"
+            }
+        ]
+    },
+    {
         "title": "EmpiRE Compass",
-        "description": "Open Source Research Impact Dashboard. Technical Team Lead.",
+        "description": "Open Source Research Impact Dashboard. Technical Team Lead. Neuro-symbolic dashboard for sustainable literature reviews (EmpiRE-Compass).",
         "tags": [
             "Data Science",
             "Dashboard",
             "Open Source"
         ],
         "links": [
+            {
+                "type": "paper",
+                "url": "https://arxiv.org/abs/2602.22276"
+            },
             {
                 "type": "website",
                 "url": "https://empire-compass.tib.eu/R186491/team"
@@ -27,6 +46,10 @@
             "Research"
         ],
         "links": [
+            {
+                "type": "paper",
+                "url": "https://arxiv.org/pdf/2604.00076"
+            },
             {
                 "type": "github",
                 "url": "https://github.com/LUH-AI-devnerds/llm-guided-curriculum-rl"
@@ -99,6 +122,10 @@
             "Assistant"
         ],
         "links": [
+            {
+                "type": "paper",
+                "url": "https://arxiv.org/pdf/2512.16447"
+            },
             {
                 "type": "website",
                 "url": "https://gitlab.com/TIBHannover/orkg/tib-aissistant/web-app"

@@ -1,5 +1,15 @@
 [
     {
+        "date": "2026-04-13",
+        "title": "Master thesis at Volkswagen",
+        "content": "Starting my master thesis at Volkswagen with the title: Supporting Multi-Step Workflows with LLM-Based Web Automation using Agentic Context Engineering and Selective Multimodal Reasoning."
+    },
+    {
+        "date": "2026-03-31",
+        "title": "1st place — Bremen Big Data Challenge (BBDC) 2026",
+        "content": "Won the BBDC challenge and attained first place. Open-source solution and write-up are on GitHub."
+    },
+    {
         "date": "2026-03-18",
         "title": "Dean's List — Leibniz Universität Hannover",
         "content": "Honored on the Dean's List of the Faculty of Electrical Engineering and Computer Science (FEI) for study year 2025."
