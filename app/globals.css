@@ -80,7 +80,6 @@
       radial-gradient(at 0% 0%, hsla(253,16%,90%,1) 0, transparent 50%), 
       radial-gradient(at 50% 0%, hsla(225,39%,90%,1) 0, transparent 50%), 
       radial-gradient(at 100% 0%, hsla(339,49%,90%,1) 0, transparent 50%);
-    background-attachment: fixed;
   }
   .dark body {
     background-image: 
@@ -91,9 +90,9 @@
 }
 
 .glass {
-  @apply bg-white/70 dark:bg-white/5 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-xl;
+  @apply bg-white/70 dark:bg-white/5 backdrop-blur-md border border-black/10 dark:border-white/10 shadow-xl;
 }
 
 .glass-card {
-  @apply bg-white/50 dark:bg-card/30 backdrop-blur-md border border-black/5 dark:border-white/10 shadow-lg hover:bg-white/80 dark:hover:bg-card/40 transition-colors duration-300;
+  @apply bg-white/50 dark:bg-card/30 backdrop-blur-sm border border-black/5 dark:border-white/10 shadow-lg hover:bg-white/80 dark:hover:bg-card/40 transition-colors duration-300;
 }

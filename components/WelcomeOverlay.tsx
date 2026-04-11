@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Sparkles } from "lucide-react";
-import characterWelcome from "../public/images/character_welcome.gif";
+import characterWelcome from "../public/images/character_welcome.png";
 import profile from "@/data/profile.json";
 
 const STORAGE_KEY = "portfolio-welcome-dismissed";
@@ -19,6 +19,13 @@ export default function WelcomeOverlay() {
       if (sessionStorage.getItem(STORAGE_KEY) === "1") return;
     } catch {
       /* private mode */
+    }
+    // Skip heavy overlay for users who prefer reduced motion (also avoids extra GPU work).
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return;
     }
     setOpen(true);
   }, []);
@@ -64,13 +71,13 @@ export default function WelcomeOverlay() {
         >
           <button
             type="button"
-            className="absolute inset-0 bg-black/55 backdrop-blur-md cursor-pointer border-0 appearance-none"
+            className="absolute inset-0 bg-black/65 cursor-pointer border-0 appearance-none"
             aria-label="Close welcome dialog"
             onClick={dismiss}
           />
 
           <motion.div
-            className="relative z-10 w-full max-w-lg glass rounded-3xl border border-white/15 shadow-2xl overflow-hidden"
+            className="relative z-10 w-full max-w-lg rounded-3xl border border-white/15 bg-white/85 dark:bg-zinc-900/90 shadow-2xl overflow-hidden backdrop-blur-md"
             initial={{ opacity: 0, scale: 0.92, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
