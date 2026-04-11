@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, Github, Linkedin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
+import ThemeToggle from "@/components/ThemeToggle";
 
 
 const navItems = [
@@ -35,7 +35,8 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          <div className="flex items-center space-x-4 ml-4 border-l border-gray-200 dark:border-white/10 pl-4">
+          <div className="flex items-center space-x-3 ml-4 border-l border-gray-200 dark:border-white/10 pl-4">
+            <ThemeToggle />
             <a href="https://github.com/amirrezaalasti" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <Github size={20} />
             </a>
@@ -46,7 +47,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center gap-4">
+        <div className="md:hidden flex items-center gap-3">
+          <ThemeToggle />
           <button
             className="text-gray-500 dark:text-gray-300 hover:text-black dark:hover:text-white"
             onClick={() => setIsOpen(!isOpen)}
