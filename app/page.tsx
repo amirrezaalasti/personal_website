@@ -26,7 +26,9 @@ export default function Home() {
           {/* Latest News */}
           <div>
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Latest News</h2>
+              <h2 className="text-2xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400">
+                Latest News
+              </h2>
               <Link href="/news" className="text-sm font-semibold text-blue-800 hover:text-blue-950 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-1">
                 View All <ArrowRight size={16} />
               </Link>
@@ -39,7 +41,9 @@ export default function Home() {
           {/* Featured Projects */}
           <div>
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Featured Projects</h2>
+              <h2 className="text-2xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400">
+                Featured Projects
+              </h2>
               <Link href="/projects" className="text-sm font-semibold text-blue-800 hover:text-blue-950 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-1">
                 View Portfolio <ArrowRight size={16} />
               </Link>

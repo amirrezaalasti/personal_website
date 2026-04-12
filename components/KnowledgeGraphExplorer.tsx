@@ -399,7 +399,7 @@ export default function KnowledgeGraphExplorer() {
         <div className="text-center lg:text-left">
           <h2
             id="knowledge-graph-heading"
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+            className="text-2xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400"
           >
             Explore my work
           </h2>

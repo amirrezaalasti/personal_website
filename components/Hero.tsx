@@ -46,7 +46,7 @@ export default function Hero() {
           className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
           Hi, I&apos;m{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-purple-800 dark:from-blue-400 dark:via-blue-400 dark:to-purple-400">
+          <span className="text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:via-blue-400 dark:to-purple-400">
             {profile.name}
           </span>
         </motion.h1>

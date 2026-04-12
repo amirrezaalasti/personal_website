@@ -18,7 +18,9 @@ export default function About() {
           
           {/* About Section */}
           <section className="space-y-6">
-            <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">About Me</h1>
+            <h1 className="text-4xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400">
+              About Me
+            </h1>
             <div className="grid md:grid-cols-3 gap-8 items-start">
               <div className="md:col-span-2 glass rounded-2xl p-8 text-gray-900 dark:text-gray-300 leading-relaxed text-lg font-medium">
                 {profile.about}

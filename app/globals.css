@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* next-themes toggles class="dark" on <html>; Tailwind v4 defaults dark: to prefers-color-scheme */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -90,9 +93,9 @@
 }
 
 .glass {
-  @apply bg-white/95 text-gray-900 shadow-xl backdrop-blur-md border border-black/[0.12] dark:bg-white/5 dark:text-inherit dark:border-white/10;
+  @apply bg-white/95 text-gray-900 shadow-xl backdrop-blur-md border border-black/[0.12] dark:bg-white/5 dark:text-gray-100 dark:border-white/10;
 }
 
 .glass-card {
-  @apply bg-white/95 text-gray-900 shadow-lg backdrop-blur-sm border border-black/[0.1] hover:bg-white dark:bg-card/30 dark:text-inherit dark:border-white/10 dark:hover:bg-card/40 transition-colors duration-300;
+  @apply bg-white/95 text-gray-900 shadow-lg backdrop-blur-sm border border-black/[0.1] hover:bg-white dark:bg-card/30 dark:text-gray-100 dark:border-white/10 dark:hover:bg-card/40 transition-colors duration-300;
 }

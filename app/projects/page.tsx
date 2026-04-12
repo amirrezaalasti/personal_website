@@ -12,7 +12,9 @@ export default function Projects() {
       <div className="flex-grow pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Projects</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400">
+              Projects
+            </h1>
             <p className="text-gray-800 dark:text-gray-400 max-w-2xl mx-auto font-medium">
               A collection of my work in AI, Data Science, and Software Engineering.
             </p>
@@ -26,7 +28,9 @@ export default function Projects() {
 
           {/* Publications Section */}
           <div className="pt-16 space-y-8">
-            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-center">Research Contributions</h2>
+            <h2 className="text-center text-3xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400">
+              Research Contributions
+            </h2>
             <div className="space-y-4">
               {publications.map((pub, index) => (
                 <div key={index} className="glass-card rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">

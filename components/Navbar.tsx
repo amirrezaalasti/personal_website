@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto glass rounded-2xl px-6 py-3 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-blue-700 to-purple-900 dark:from-blue-400 dark:via-blue-400 dark:to-purple-400"
+          className="text-xl font-bold text-gray-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:via-blue-400 dark:to-purple-400"
         >
           Amirreza Alasti
         </Link>
