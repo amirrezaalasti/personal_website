@@ -15,7 +15,7 @@
     {
         "title": "EmpiRE-Compass: A Neuro-Symbolic Dashboard for Sustainable and Dynamic Knowledge Exploration, Synthesis, and Reuse",
         "year": "2026",
-        "venue": "32nd International Working Conference on Requirements Engineering: Foundations for Software Quality (REFSQ 2026) · Feb 25, 2026",
+        "venue": "32nd International Working Conference on Requirements Engineering: Foundations for Software Quality (REFSQ 2026) · Best Posters and Tools Award · Feb 25, 2026",
         "link": "https://arxiv.org/abs/2602.22276",
         "linkLabel": "arXiv",
         "extraLinks": [
@@ -26,15 +26,25 @@
             {
                 "label": "Google Scholar",
                 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cEH7bAgAAAAJ&citation_for_view=cEH7bAgAAAAJ:9yKSN-GCB0IC"
+            },
+            {
+                "label": "Award",
+                "url": "https://www.linkedin.com/in/amirreza-alasti-61450b1aa/overlay/Honor/1006972204/treasury/?profileId=ACoAADDXabABVjIzcvJGHWfjOeN_hqDtEqO_YL0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BHEGFNQ4CTI2QzeDRuigpAg%3D%3D"
             }
         ]
     },
     {
         "title": "From PDFs to Structured and FAIR Knowledge: Organizing NLP4RE ID Cards in the Open Research Knowledge Graph — A Pipeline and Dashboard Integration for Improved Access and Reuse of NLP4RE Knowledge",
         "year": "2026",
-        "venue": "Mar 26, 2026",
-        "link": "https://github.com/amirrezaalasti/NLP4RE-IDCard-Processor",
-        "linkLabel": "Repository"
+        "venue": "NLP4RE Workshop · Mar 26, 2026",
+        "link": "https://ceur-ws.org/Vol-4208/nlp4re-short4.pdf",
+        "linkLabel": "Paper",
+        "extraLinks": [
+            {
+                "label": "Repository",
+                "url": "https://github.com/amirrezaalasti/NLP4RE-IDCard-Processor"
+            }
+        ]
     },
     {
         "title": "OntoAligner: A Comprehensive Modular and Robust Python Toolkit for Ontology Alignment",

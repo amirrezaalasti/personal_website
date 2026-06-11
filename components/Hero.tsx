@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import profile from "@/data/profile.json";
+import { assetUrl } from "@/lib/assetUrl";
 import heroPhoto from "../public/images/amirreza.jpeg";
 
 export default function Hero() {
@@ -77,6 +78,15 @@ export default function Hero() {
           >
             About Me
           </Link>
+          {"cv" in profile && typeof profile.cv === "string" && (
+            <a
+              href={assetUrl(profile.cv)}
+              download="Amirreza-Alasti-CV.pdf"
+              className="px-8 py-3 rounded-full border border-black/15 bg-white text-gray-900 font-semibold shadow-sm hover:bg-gray-50 dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-none dark:backdrop-blur-sm dark:hover:bg-white/15 transition-all hover:scale-105 flex items-center gap-2"
+            >
+              Download CV <Download size={18} />
+            </a>
+          )}
         </motion.div>
       </motion.div>
     </section>

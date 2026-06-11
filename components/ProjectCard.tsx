@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, ExternalLink, FileText } from "lucide-react";
+import { Github, ExternalLink, FileText, Award } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ProjectProps {
@@ -34,14 +34,18 @@ export default function ProjectCard({ title, description, tags, links }: Project
                 link.type === "github"
                   ? "View code"
                   : link.type === "paper"
-                    ? "Paper (arXiv)"
-                    : "View project"
+                    ? "Paper"
+                    : link.type === "award"
+                      ? "Award"
+                      : "View project"
               }
             >
               {link.type === "github" ? (
                 <Github size={20} />
               ) : link.type === "paper" ? (
                 <FileText size={20} />
+              ) : link.type === "award" ? (
+                <Award size={20} />
               ) : (
                 <ExternalLink size={20} />
               )}

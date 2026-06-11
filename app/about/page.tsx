@@ -192,7 +192,9 @@ export default function About() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                     >
-                      Faculty announcement
+                      {"urlLabel" in award && typeof award.urlLabel === "string"
+                        ? award.urlLabel
+                        : "Faculty announcement"}
                       <ExternalLink className="w-4 h-4 shrink-0" aria-hidden />
                     </a>
                   )}

@@ -8,6 +8,7 @@
         "github": "https://github.com/amirrezaalasti",
         "scholar": "https://scholar.google.com/citations?user=cEH7bAgAAAAJ&hl=en"
     },
+    "cv": "/Amirreza-Alasti-Lebenslauf-Mai-VW-PhD-RL.docx.pdf",
     "experience": [
         {
             "title": "Data Scientist",
@@ -109,6 +110,15 @@
             "issuer": "Leibniz Universität Hannover",
             "date": "2025",
             "description": "Awarded the Deutschlandstipendium scholarship for outstanding academic achievement and social commitment."
+        },
+        {
+            "title": "1st Place — Student Track, Bremen Big Data Challenge (BBDC)",
+            "issuer": "CSL, Universität Bremen · Presented by JAAI",
+            "date": "Jan 2024",
+            "description": "Won first place in the Student Track at the Bremen Big Data Challenge with the project \"Solo Leveling\".",
+            "imageUrl": "https://bbdc.csl.uni-bremen.de/wp-content/uploads/elementor/thumbs/StudentTrack_1stPlace-scaled-roemm2thkhqxlhjlzjhaw9iwduepbnzr35jhd642hs.jpg",
+            "url": "https://www.linkedin.com/in/amirreza-alasti-61450b1aa/overlay/Honor/1090832257/treasury/?profileId=ACoAADDXabABVjIzcvJGHWfjOeN_hqDtEqO_YL0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_media_list%3BOuGBtGUBQUi0yX4%2BhpEV2A%3D%3D",
+            "urlLabel": "Certificate"
         }
     ],
     "volunteering": [

@@ -20,6 +20,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath,
   assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   transpilePackages: ["react-force-graph-2d", "force-graph", "react-kapsule"],
   images: {
     unoptimized: true,
@@ -28,6 +31,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.fei.uni-hannover.de",
         pathname: "/fileadmin/**",
+      },
+      {
+        protocol: "https",
+        hostname: "bbdc.csl.uni-bremen.de",
+        pathname: "/wp-content/**",
       },
     ],
   },

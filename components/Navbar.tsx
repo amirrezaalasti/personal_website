@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { Menu, X, Github, Linkedin, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "@/components/ThemeToggle";
+import profile from "@/data/profile.json";
+import { assetUrl } from "@/lib/assetUrl";
 
 
 const navItems = [
@@ -39,6 +41,16 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="flex items-center space-x-3 ml-4 border-l border-gray-200 dark:border-white/10 pl-4">
+            {"cv" in profile && typeof profile.cv === "string" && (
+              <a
+                href={assetUrl(profile.cv)}
+                download="Amirreza-Alasti-CV.pdf"
+                className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                title="Download CV"
+              >
+                <Download size={20} />
+              </a>
+            )}
             <ThemeToggle />
             <a href="https://github.com/amirrezaalasti" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <Github size={20} />
@@ -81,6 +93,16 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex items-center space-x-4 pt-4 border-t border-black/10 dark:border-white/10">
+              {"cv" in profile && typeof profile.cv === "string" && (
+                <a
+                  href={assetUrl(profile.cv)}
+                  download="Amirreza-Alasti-CV.pdf"
+                  className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2 text-sm font-bold"
+                >
+                  <Download size={20} />
+                  Download CV
+                </a>
+              )}
               <a href="https://github.com/amirrezaalasti" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                 <Github size={20} />
               </a>

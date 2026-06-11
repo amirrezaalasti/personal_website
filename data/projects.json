@@ -11,12 +11,20 @@
             {
                 "type": "github",
                 "url": "https://github.com/amirrezaalasti/BBDC2026-Detection-of-Age-Related-Diseases"
+            },
+            {
+                "type": "website",
+                "url": "https://bbdc.csl.uni-bremen.de/wp-content/uploads/elementor/thumbs/StudentTrack_1stPlace-scaled-roemm2thkhqxlhjlzjhaw9iwduepbnzr35jhd642hs.jpg"
+            },
+            {
+                "type": "website",
+                "url": "https://www.linkedin.com/in/amirreza-alasti-61450b1aa/overlay/Honor/1090832257/treasury/?profileId=ACoAADDXabABVjIzcvJGHWfjOeN_hqDtEqO_YL0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_media_list%3BOuGBtGUBQUi0yX4%2BhpEV2A%3D%3D"
             }
         ]
     },
     {
         "title": "EmpiRE Compass",
-        "description": "Open Source Research Impact Dashboard. Technical Team Lead. Neuro-symbolic dashboard for sustainable literature reviews (EmpiRE-Compass).",
+        "description": "Open Source Research Impact Dashboard. Technical Team Lead. Neuro-symbolic dashboard for sustainable literature reviews (EmpiRE-Compass). Received the Best Posters and Tools Award at REFSQ 2026.",
         "tags": [
             "Data Science",
             "Dashboard",
@@ -34,6 +42,10 @@
             {
                 "type": "github",
                 "url": "https://github.com/okarras/empire-Compass/"
+            },
+            {
+                "type": "award",
+                "url": "https://www.linkedin.com/in/amirreza-alasti-61450b1aa/overlay/Honor/1006972204/treasury/?profileId=ACoAADDXabABVjIzcvJGHWfjOeN_hqDtEqO_YL0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BHEGFNQ4CTI2QzeDRuigpAg%3D%3D"
             }
         ]
     },
@@ -66,6 +78,10 @@
             "Research"
         ],
         "links": [
+            {
+                "type": "paper",
+                "url": "https://ceur-ws.org/Vol-4208/nlp4re-short4.pdf"
+            },
             {
                 "type": "github",
                 "url": "https://github.com/amirrezaalasti/NLP4RE-IDCard-Processor"
